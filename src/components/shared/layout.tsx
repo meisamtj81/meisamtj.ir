@@ -11,24 +11,23 @@ export const AppLayout = ({ children }: { children: ReactNode }) => {
 
   return (
     <DirectionProvider direction="ltr">
-      <div className="w-full min-h-svh p-5 max-w-lg mx-auto flex flex-col justify-between">
-        <header className="mt-5">
+      <div className="w-full min-h-svh p-10 max-w-lg mx-auto flex flex-col justify-between">
+        <motion.header initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1 }}>
           <MeisamTjLogo className="w-10 fill-foreground" />
-        </header>
+        </motion.header>
 
         <AnimatePresence>
-          <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }} className="flex-1">
-            <motion.section key={pathname} initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: -10, opacity: 0 }}>
+          <main>
+            <motion.section key={pathname} initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{delay: 0.5}} exit={{ y: -10, opacity: 0 }}>
               {children}
             </motion.section>
-          </motion.main>
+          </main>
         </AnimatePresence>
 
         <motion.footer
-          dir="ltr"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 1.25 }}
           className="shrink-0 mt-10"
         >
           <section className="flex items-center justify-center">
