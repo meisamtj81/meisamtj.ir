@@ -6,15 +6,15 @@ export const HomePage = () => {
       <section className="relative">
         <img src="/img/meisamtj-big.png" className="-mt-13" />
 
-          <h1 className="absolute top-1/2 p-5 rounded-lg shadow-lg bg-background">
-            <span className="font-light text-2xl">Hi, I'm</span>
-            <strong className="block text-4xl mt-2 font-normal font-mono">Meisam Tj.</strong>
+          <h1 className="absolute top-1/2 p-5 rounded-lg shadow-lg bg-foreground text-background">
+            <span className="font-light text-xl">Hi, I'm</span>
+            <strong className="block text-3xl mt-2 font-normal font-mono">Meisam Tj.</strong>
           </h1>
 
           <div className="absolute bottom-0 w-full bg-linear-to-t from-10% from-background to-transparent h-30" />
       </section>
 
-      <p className="font-mono">
+      <p className="text-sm mt-10">
         I'm a full-stack web developer specializing in Laravel and React, building modern, scalable web applications. I have years of experience working across different technologies and turning ideas into reliable, user-focused products. 
       </p>
 

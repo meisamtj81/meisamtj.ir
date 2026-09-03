@@ -11,8 +11,8 @@ export const AppLayout = ({ children }: { children: ReactNode }) => {
 
   return (
     <DirectionProvider direction="ltr">
-      <div className="w-full min-h-svh p-10 max-w-lg mx-auto flex flex-col justify-between">
-        <header>
+      <div className="w-full min-h-svh p-5 max-w-lg mx-auto flex flex-col justify-between">
+        <header className="mt-5">
           <MeisamTjLogo className="w-10 fill-foreground" />
         </header>
 
@@ -29,14 +29,14 @@ export const AppLayout = ({ children }: { children: ReactNode }) => {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="shrink-0"
+          className="shrink-0 mt-10"
         >
-          <section className="flex items-center justify-center gap-2">
+          <section className="flex items-center justify-center">
             <p className="text-xs">Choose your preferred theme -&gt; </p>
             <ThemeModeToggle />
           </section>
 
-          <p className="text-center font-mono text-muted-foreground text-sm mt-1">Meisam Tj. | Full-Stack Web Developer</p>
+          <p className="text-center font-mono text-muted-foreground text-xs">Meisam Tj. | Full-Stack Web Developer</p>
         </motion.footer>
       </div>
     </DirectionProvider>
