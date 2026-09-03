@@ -4,9 +4,9 @@ export const HomePage = () => {
   return (
     <>
       <section className="relative">
-        <img src="/img/meisamtj-big.png" className="-mt-50" />
+        <img src="/img/meisamtj-big.png" className="-mt-13" />
 
-          <h1 className="absolute top-1/2 p-5 rounded-lg shadow-lg bg-foreground text-background">
+          <h1 className="absolute top-1/2 p-5 rounded-lg shadow-lg bg-foreground text-background z-10">
             <span className="font-light text-xl">Hi, I'm</span>
             <strong className="block text-3xl mt-2 font-normal font-mono">Meisam Tj.</strong>
           </h1>

@@ -12,7 +12,12 @@ export const AppLayout = ({ children }: { children: ReactNode }) => {
   return (
     <DirectionProvider direction="ltr">
       <div className="w-full min-h-svh p-10 max-w-lg mx-auto flex flex-col justify-between">
-        <motion.header initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1 }} className="flex justify-between">
+        <motion.header
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 1 }}
+          className="flex justify-between"
+        >
           <MeisamTjLogo className="w-10 fill-foreground" />
           <ThemeModeToggle />
         </motion.header>
@@ -31,7 +36,7 @@ export const AppLayout = ({ children }: { children: ReactNode }) => {
           </main>
         </AnimatePresence>
 
-        <motion.footer initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1.25 }} className="shrink-0 mt-5">
+        <motion.footer initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1.25 }} className="shrink-0">
           <p className="text-center text-muted-foreground text-xs">Meisam Tj. | Full-Stack Web Developer</p>
         </motion.footer>
       </div>
