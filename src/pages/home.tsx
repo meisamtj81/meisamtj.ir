@@ -4,7 +4,7 @@ export const HomePage = () => {
   return (
     <>
       <section className="relative">
-        <img src="/img/meisamtj-big.png" className="-mt-13" />
+        <img src="/img/meisamtj-big.png" className="-mt-50" />
 
           <h1 className="absolute top-1/2 p-5 rounded-lg shadow-lg bg-foreground text-background">
             <span className="font-light text-xl">Hi, I'm</span>
@@ -14,7 +14,7 @@ export const HomePage = () => {
           <div className="absolute bottom-0 w-full bg-linear-to-t from-10% from-background to-transparent h-30" />
       </section>
 
-      <p className="text-sm mt-10">
+      <p className="text-sm mt-5">
         I'm a full-stack web developer specializing in Laravel and React, building modern, scalable web applications. I have years of experience working across different technologies and turning ideas into reliable, user-focused products. 
       </p>
 
