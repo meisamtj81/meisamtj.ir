@@ -23,7 +23,7 @@ export const AppLayout = ({ children }: { children: ReactNode }) => {
         </motion.header>
 
         <AnimatePresence>
-          <main>
+          <main className="flex-1">
             <motion.section
               key={pathname}
               initial={{ y: 20, opacity: 0 }}
