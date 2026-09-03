@@ -16,7 +16,7 @@ export const AppLayout = ({ children }: { children: ReactNode }) => {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 1 }}
-          className="flex justify-between"
+          className="flex justify-between z-20"
         >
           <MeisamTjLogo className="w-10 fill-foreground" />
           <ThemeModeToggle />
