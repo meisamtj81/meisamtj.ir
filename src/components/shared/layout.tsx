@@ -36,7 +36,7 @@ export const AppLayout = ({ children }: { children: ReactNode }) => {
           </main>
         </AnimatePresence>
 
-        <motion.footer initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1.25 }} className="shrink-0">
+        <motion.footer initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1.25 }} className="shrink-0 mt-5">
           <p className="text-center text-muted-foreground text-xs">Meisam Tj. | Full-Stack Web Developer</p>
         </motion.footer>
       </div>
