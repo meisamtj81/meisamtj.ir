@@ -30,8 +30,6 @@ export const HomePage = () => {
         <Badge variant="secondary">Livewire</Badge>
         <Badge variant="secondary">Alpine.js</Badge>
         <Badge variant="secondary">Tailwind CSS</Badge>
-        <Badge variant="secondary">HTML</Badge>
-        <Badge variant="secondary">CSS</Badge>
       </section>
     </>
   );

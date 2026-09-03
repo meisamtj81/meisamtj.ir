@@ -28,7 +28,7 @@ export const AppLayout = ({ children }: { children: ReactNode }) => {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 1.25 }}
-          className="shrink-0 mt-10"
+          className="shrink-0"
         >
           <section className="flex items-center justify-center">
             <p className="text-xs">Choose your preferred theme -&gt; </p>
